@@ -10,5 +10,10 @@ int main()
 	printf("Сумма вклада:\n");
 	scanf("%f",&vklad);
 
+	if((srok>365)||(srok<0)||(vklad<10000)) //проверка входных данных
+	{
+		perror("incorrect input");
+		return 0;
+	}
 	return 0; 
 }
