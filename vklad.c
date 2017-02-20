@@ -10,7 +10,7 @@ int main()
 	printf("Сумма вклада:\n");
 	scanf("%f",&vklad);
 
-	if((srok>365)||(srok<0)||(vklad<10000)) //проверка входных данных
+	if((srok>365)||(srok<0)||(vklad<1000)) //проверка входных данных
 	{
 		perror("incorrect input");
 		return 0;
@@ -63,7 +63,7 @@ if(vklad<=100000)
         }
     }
 
-	printf("%g\n",vklad);
+	printf("Сумма на момент окончания:%g\n", vklad);
 
 	return 0; 
 }
