@@ -19,3 +19,10 @@ CTEST(input, srok_0_vklad_100000) {
     
     ASSERT_EQUAL(0, result);
 }
+CTEST(input, srok_31_vklad_0) {
+    int srok, vklad;
+    
+    const int result = input(&vklad, &srok);
+    
+    ASSERT_EQUAL(0, result);
+}
