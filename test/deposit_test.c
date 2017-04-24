@@ -30,5 +30,5 @@ CTEST(deposit_calc, test5)
 
 CTEST(deposit_calc, test6)
 {
-    ASSERT_EQUAL(10600, deposit_calc(123, 10000));
+    ASSERT_EQUAL(10600, deposit_calc(121, 10000));
 }

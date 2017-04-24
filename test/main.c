@@ -10,7 +10,12 @@ CTEST (suite, test1)
 
 CTEST (suite, test2)
 {
-    ASSERT_EQUAL(2, 3);
+    ASSERT_EQUAL(3, 2);
+}
+
+CTEST (suite, test3)
+{
+    ASSERT_EQUAL(1, 0);
 }
 
 int main(int argc, const char *argv[])
