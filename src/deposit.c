@@ -21,12 +21,12 @@ float deposit_calc(int srok, int vklad)
 int input(int *vklad, int *srok)
 {
     printf("Сумма вклада: ");
-    if(isdigit(*vklad)) {
+    if(!*vklad)) {
         printf("incorrect vklad\n");
         return 0;
     }
     printf("Срок вклада: ");
-    if(isdigit(*srok)) {
+    if(!*srok)) {
         printf("incorrect srok");
         return 0;
     }
