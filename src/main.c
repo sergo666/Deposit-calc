@@ -6,6 +6,9 @@ int main()
 {
     int srok, vklad;
     
+    scanf("%d", &srok);
+    scanf("%d", &vklad);
+    
     if(!input(&vklad, &srok)) {
         return 1;
     }
