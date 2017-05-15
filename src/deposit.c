@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "deposit.h"
 #define DEPOSIT 100000
 
@@ -20,12 +21,12 @@ float deposit_calc(int srok, int vklad)
 
 int input(int *vklad, int *srok)
 {
-    printf("Сумма вклада: ");
+    //printf("Сумма вклада: ");
     if(isalpha(*vklad)) {
         printf("incorrect vklad\n");
         return 0;
     }
-    printf("Срок вклада: ");
+    //printf("Срок вклада: ");
     if(isalpha(*srok)) {
         printf("incorrect srok");
         return 0;
